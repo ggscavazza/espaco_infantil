@@ -1,5 +1,6 @@
-import styled from "styled-components"
 import Logo from "../Logo"
+import styled from "styled-components"
+import OpcoesMenu from "../OpcoesMenu"
 import { Link } from "react-router-dom"
 
 const HeaderContainer = styled.aside`
@@ -16,10 +17,9 @@ const HeaderContainer = styled.aside`
     a {
         margin: 0;
         width: 100%;
-        color: #202020;
+        color: #ffffff;
         padding: 10px 0px;
         text-decoration: none;
-        background-color: #fff;
     }
 `
 
@@ -27,6 +27,7 @@ function Header () {
     return (
         <HeaderContainer>
             <Link to='/'><Logo /></Link>
+            <OpcoesMenu />
         </HeaderContainer>
     )
 }

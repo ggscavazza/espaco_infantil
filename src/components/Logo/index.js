@@ -1,4 +1,4 @@
-import logo from '../../images/logo.png'
+import logo from '../../images/logo-branco.png'
 import styled from 'styled-components'
 
 const LogoContainer = styled.div`
@@ -7,7 +7,6 @@ const LogoContainer = styled.div`
     font-size: 30px;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
 
     img {
         max-width: 240px;
@@ -17,6 +16,10 @@ const LogoContainer = styled.div`
         margin: 0;
         padding: 0;
     }
+
+    hr {
+        width: 95%;
+    }
 `
 
 function Logo () {
@@ -24,6 +27,7 @@ function Logo () {
         <LogoContainer>
             <img src={logo} alt='logo' />
             <p><strong>Espaço</strong>Infantil</p>
+            <hr/>
         </LogoContainer>
     )
 }
