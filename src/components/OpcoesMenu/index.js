@@ -37,16 +37,28 @@ const Opcao = styled.li`
     cursor: pointer;
     font-size: 24px;
     font-weight: bold;
+    align-items: center;
     border-radius: 10px;
+    justify-content: center;
     background-color: #f9f9f9;
-    justify-content: space-evenly;
 `
 
 const Icone = styled.div`
-  width: 25px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+
+    img {
+        max-width: 30px;
+    }
 `
 
-const linksOpcoes = ['Home', 'Fichas', 'Cadastro']
+const linksOpcoes = ["Home", "Fichas", "Cadastro"]
+const iconesOpcoes = {
+    "Home": home,
+    "Fichas": fichas,
+    "Cadastro": cadastro
+}
 
 function OpcoesMenu() {
     return (
@@ -55,8 +67,8 @@ function OpcoesMenu() {
                 { linksOpcoes.map( (link) => (
                     <Link to={`/${link.toLowerCase()}`}>
                         <Opcao>
-                            <Icone><img src={link.toLowerCase()} alt={link}></img></Icone>
-                            {link}
+                            <Icone><img src={iconesOpcoes[link]} alt></img> {link}</Icone>
+                            
                         </Opcao>
                     </Link>
                 ) ) }
