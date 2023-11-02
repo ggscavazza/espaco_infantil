@@ -67,8 +67,7 @@ function OpcoesMenu() {
                 { linksOpcoes.map( (link) => (
                     <Link to={`/${link.toLowerCase()}`}>
                         <Opcao>
-                            <Icone><img src={iconesOpcoes[link]} alt></img> {link}</Icone>
-                            
+                            <Icone><img src={iconesOpcoes[link]} alt={`${'Icone '+link}`}></img> {link}</Icone>
                         </Opcao>
                     </Link>
                 ) ) }
