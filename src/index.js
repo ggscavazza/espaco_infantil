@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AssideMenu from './components/AssideMenu'
 import Home from './routes/Home'
 import Fichas from './routes/Fichas'
+import Cadastro from './routes/Cadastro'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -18,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   code {
@@ -27,6 +29,12 @@ const GlobalStyle = createGlobalStyle`
 
   li {
     list-style: none;
+  }
+
+  #root {
+    gap: 50px;
+    width: 100%;
+    display: flex;
   }
 `
 
@@ -38,6 +46,9 @@ root.render(
       <AssideMenu />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/fichas' element={<Fichas />} />
+        <Route path='/cadastro' element={<Cadastro />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
