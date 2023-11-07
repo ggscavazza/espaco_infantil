@@ -13,6 +13,9 @@
 9. > Para abrir o projeto no Visual Code execute o comando `code .` no terminal do GitBash
 10. > Para rodar o projeto em localhost execute o comando `npm install & npm start`, o projeto será iniciado e poderá ser aberto no navegador no link [http://localhost:3000](http://localhost:3000). Abaixo deixarei alguns comandos script da própria documentação do React.
 
+## Atualizando seu fork com o repositório original
+1. > Seguir o passo a passo do link [Atualizando Fork](https://gist.github.com/rdeavila/9618969)
+
 
 ## Available Scripts
 In the project directory, you can run:
